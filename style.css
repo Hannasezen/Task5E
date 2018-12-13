@@ -108,17 +108,17 @@ input {
 .hover {
     position: relative;
     height: 100%;
-    opacity: 1;
+    opacity: 0;
     transition: all 0.7s ease;
 }
 
 .hover__background {
-    border-bottom: 667px solid #d3d8f0bd;
+    border-bottom: 667px solid rgba(134, 160, 217, 0.6);
     border-left: 118px solid transparent;
     height: 100%;
     width: 28rem;
     position: absolute;
-    right: 0;
+    right: -500px;
     transition: all 0.5s ease;
 }
 
