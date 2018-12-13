@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+input {
+    display: none;
+}
+
+.window {
+    max-height: 697px;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    height: 667px;
+}
+
+.slider1 {
+    background: url('./img/London.jpg') no-repeat center center;
+}
+
+.slider2 {
+    background: url('./img/paris.jpg') no-repeat center center;
+}
+
+.slider3 {
+    background: url('./img/ny.jpg') no-repeat center center;
+}
+
+.slider:hover .hover__background {
+    right: 0;
+}
+
+.slider:hover .hover {
+    opacity: 1;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn__number-up {
+    margin-top: -18px;
+}
+
+.btn__number-down {
+    margin-bottom: -18px;
+}
+
+.slider__buttons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+}
+
+.slider__btn {
+    position: absolute;
+    left: 40%;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.slider__btn-up {
+    top: 5%;
+}
+
+.slider__btn-down {
+    bottom: 5%;
+}
+
+.label-up {
+    width: 50px;
+    height: 50px;
+    background: url('./img/up.svg') no-repeat center center;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.label-down {
+    width: 50px;
+    height: 50px;
+    background: url('./img/down.svg') no-repeat center center;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.hover {
+    position: relative;
+    height: 100%;
+    opacity: 1;
+    transition: all 0.7s ease;
+}
+
+.hover__background {
+    border-bottom: 667px solid #d3d8f0bd;
+    border-left: 118px solid transparent;
+    height: 100%;
+    width: 28rem;
+    position: absolute;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+.hover__title {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.slider-number {
+    display: block;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.hover__views {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 1.3em;
+}
+
+.hover__status {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+#slider2:checked + .slider {
+    top: -667px;
+}
+
+#slider3:checked + .slider {
+    margin-top: calc(-667px - 667px);
+}
+
+#slider1 {
+    z-index: 200;
+}
+
+
+
+
+
+@media screen and (max-width: ) {
+  
+
+}
