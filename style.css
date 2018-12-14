@@ -13,42 +13,39 @@ input {
     display: none;
 }
 
-.window {
-    max-height: 697px;
-    overflow: hidden;
-}
-
-.wrapper {
+.slider {
     width: 80%;
     max-width: 1000px;
+    height: 90vh;
+    max-height: 667px;
     margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     overflow: hidden;
 }
 
-.slider {
+.slide {
     position: relative;
-    height: 667px;
+    height: 90vh;
 }
 
-.slider1 {
+.slide1 {
     background: url('./img/London.jpg') no-repeat center center;
 }
 
-.slider2 {
+.slide2 {
     background: url('./img/paris.jpg') no-repeat center center;
 }
 
-.slider3 {
+.slide3 {
     background: url('./img/ny.jpg') no-repeat center center;
 }
 
-.slider:hover .hover__background {
+.slide:hover .hover__background {
     right: 0;
 }
 
-.slider:hover .hover {
+.slide:hover .hover {
     opacity: 1;
 }
 
@@ -66,7 +63,7 @@ input {
     margin-bottom: -18px;
 }
 
-.slider__buttons {
+.slide__buttons {
     position: absolute;
     top: 0;
     left: 0;
@@ -74,18 +71,18 @@ input {
     width: 10%;
 }
 
-.slider__btn {
+.slide__btn {
     position: absolute;
     left: 40%;
     font-size: 2rem;
     color: #fff;
 }
 
-.slider__btn-up {
+.slide__btn-up {
     top: 5%;
 }
 
-.slider__btn-down {
+.slide__btn-down {
     bottom: 5%;
 }
 
@@ -113,7 +110,7 @@ input {
 }
 
 .hover__background {
-    border-bottom: 667px solid rgba(134, 160, 217, 0.6);
+    border-bottom: 90vh solid rgba(134, 160, 217, 0.6);
     border-left: 118px solid transparent;
     height: 100%;
     width: 28rem;
@@ -130,7 +127,7 @@ input {
     font-weight: bold;
 }
 
-.slider-number {
+.slide-number {
     display: block;
     font-size: 2.5em;
     text-align: center;
@@ -155,23 +152,25 @@ input {
     text-transform: uppercase;
 }
 
-#slider2:checked + .slider {
-    top: -667px;
+#slide2:checked + .slide {
+    top: -90vh;
 }
 
-#slider3:checked + .slider {
-    margin-top: calc(-667px - 667px);
+#slide3:checked + .slide {
+    margin-top: calc(-90vh - 90vh);
 }
 
-#slider1 {
+#slide1 {
     z-index: 200;
 }
 
 
-
-
-
-@media screen and (max-width: ) {
-  
-
+@media screen and (max-width: 645px) {
+    .hover__background {
+        width: 75%;
+    }
+    
+    .hover__title {
+        font-size: 1.6rem;
+    }
 }
